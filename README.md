@@ -21,11 +21,8 @@
 
 ## 🔧 本地运行
 
-1. 克隆仓库
-2. 去 [JSONBin.io](https://jsonbin.io) 注册免费账号
-3. 创建一个 Bin，获取 `BIN_ID` 和 `API_KEY`
-4. 修改 `script.js` 中的配置
-5. 用手机浏览器打开 `index.html`
+1. 用浏览器打开https://github.com/Programming-Newbies-Community/instant-codesnap网址
+2.打开或下载我发布的文件
 
 
 ## 🤝 贡献
