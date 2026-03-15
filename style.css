@@ -1,0 +1,252 @@
+/* 全局设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #0a0c0f;
+    color: #e4e6eb;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: #1a1d24;
+    border-radius: 24px;
+    padding: 20px 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* 头部 */
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    color: #8b95a9;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* 工具栏 */
+.toolbar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.language-select, .expiry-select select {
+    background: #2a2f3a;
+    color: #e4e6eb;
+    border: 1px solid #3f4450;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+}
+
+.expiry-select {
+    flex: 1;
+}
+
+/* 代码输入区 */
+.code-input {
+    width: 100%;
+    height: 200px;
+    background: #0f1217;
+    border: 1px solid #2f3540;
+    border-radius: 16px;
+    padding: 16px;
+    color: #e4e6eb;
+    font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+    margin-bottom: 16px;
+}
+
+.code-input:focus {
+    border-color: #6e8efb;
+    outline: none;
+}
+
+/* 按钮 */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.primary-btn {
+    flex: 3;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(110,142,251,0.3);
+    transition: transform 0.2s;
+}
+
+.primary-btn:active {
+    transform: scale(0.97);
+}
+
+.secondary-btn {
+    flex: 1;
+    background: #2a2f3a;
+    color: #e4e6eb;
+    border: 1px solid #3f4450;
+    border-radius: 40px;
+    padding: 14px 0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* 结果卡片 */
+.result-section {
+    margin-top: 20px;
+}
+
+.result-card {
+    background: #0f1217;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #2f3540;
+}
+
+.result-label {
+    color: #8b95a9;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.link-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.link-box input {
+    flex: 1;
+    background: #1a1d24;
+    border: 1px solid #2f3540;
+    border-radius: 30px;
+    padding: 12px 16px;
+    color: #6e8efb;
+    font-size: 14px;
+    outline: none;
+}
+
+.copy-btn {
+    background: #2a2f3a;
+    border: none;
+    border-radius: 30px;
+    width: 48px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.expiry-note {
+    color: #a777e3;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+/* 预览区域 */
+.preview-box {
+    background: #1a1d24;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.preview-label {
+    color: #8b95a9;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.preview-code {
+    background: #0f1217;
+    padding: 12px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'SF Mono', monospace;
+    font-size: 13px;
+    color: #b4c2e0;
+}
+
+/* 查看模式 */
+.view-section {
+    margin-top: 20px;
+}
+
+.code-viewer {
+    background: #0f1217;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.view-language {
+    background: #2a2f3a;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.view-code {
+    background: #1a1d24;
+    padding: 16px;
+    border-radius: 12px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* 页脚 */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #4a5162;
+    font-size: 13px;
+}
+
+.small {
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+/* 工具类 */
+.hidden {
+    display: none;
+  }
