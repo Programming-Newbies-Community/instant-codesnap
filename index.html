@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>瞬时码窗 · 手机代码分享</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📸 瞬时码窗</h1>
+            <p class="subtitle">手机代码片段 · 即时分享</p>
+        </header>
+        <main>
+            <div class="editor-section">
+                <div class="toolbar">
+                    <select id="language" class="language-select">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                    <div class="expiry-select">
+                        <select id="expiry">
+                            <option value="3600">1小时后销毁</option>
+                            <option value="86400">24小时后销毁</option>
+                            <option value="604800">7天后销毁</option>
+                            <option value="0">永久的</option>
+                        </select>
+                    </div>
+                </div>
+                <textarea id="codeInput" class="code-input" placeholder="粘贴或输入代码片段..."></textarea>
+                <div class="action-buttons">
+                    <button id="createBtn" class="primary-btn">✨ 生成分享链接</button>
+                    <button id="clearBtn" class="secondary-btn">清空</button>
+                </div>
+            </div>
+            <div id="resultSection" class="result-section hidden">
+                <div class="result-card">
+                    <p class="result-label">分享链接已生成：</p>
+                    <div class="link-box">
+                        <input type="text" id="shareLink" readonly>
+                        <button id="copyBtn" class="copy-btn">📋</button>
+                    </div>
+                    <p class="expiry-note" id="expiryNote"></p>
+                    <div class="preview-box">
+                        <p class="preview-label">预览：</p>
+                        <pre id="previewCode" class="preview-code"><code></code></pre>
+                    </div>
+                    <button id="newBtn" class="secondary-btn">再创建一个</button>
+                </div>
+            </div>
+            <div id="viewSection" class="view-section hidden"></div>
+        </main>
+        <footer>
+            <p>⚡ 手机优先 · 瞬时分享 · 开源精神</p>
+            <p class="small">代码片段不会永久存储，请及时保存重要内容</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
