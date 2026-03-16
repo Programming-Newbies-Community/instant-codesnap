@@ -21,8 +21,8 @@
 
 ## 🔧 本地运行
 
-1. 用浏览器打开https://github.com/Programming-Newbies-Community/instant-codesnap
-2.打开或下载我发布的文件
+1.用浏览器打开https://programming-newbies-community.github.io/instant-codesnap
+2.体验应用
 
 
 ## 🤝 贡献
